@@ -5,13 +5,13 @@ using namespace std;
 
 int main()
 {
-    list<int> doublyLinkedList = {1, 2, 3, 4, 5, 6, 79, 334, 3};
+    list<int> LinkedList = {1, 2, 3, 4, 5, 6, 79, 334, 3};
 
     // Delete the last element
-    doublyLinkedList.pop_back();
+    LinkedList.pop_back();
 
     // Display list
-    for (int val : doublyLinkedList)
+    for (int val : LinkedList)
     {
         cout << val << " ";
     }

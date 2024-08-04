@@ -5,13 +5,13 @@ using namespace std;
 
 int main()
 {
-    list<int> doublyLinkedList = {1, 2, 3};
+    list<int> LinkedList = {1, 2, 3};
 
     // Insert at the end
-    doublyLinkedList.push_back(4);
+    LinkedList.push_back(4);
 
     // Display list
-    for (int val : doublyLinkedList)
+    for (int val : LinkedList)
     {
         cout << val << " ";
     }

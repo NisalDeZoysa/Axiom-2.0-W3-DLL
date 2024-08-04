@@ -5,8 +5,8 @@ using namespace std;
 
 int main()
 {
-    list<int> doublyLinkedList = {1, 2, 3, 4, 5};
-    cout << "Length of the doubly linked list: " << doublyLinkedList.size() << endl;
+    list<int> LinkedList = {1, 2, 3, 4, 5};
+    cout << "Length of the linked list: " << LinkedList.size() << endl;
 
     return 0;
 }

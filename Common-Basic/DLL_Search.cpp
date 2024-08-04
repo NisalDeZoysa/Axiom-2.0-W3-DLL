@@ -5,11 +5,11 @@ using namespace std;
 
 int main()
 {
-    list<int> doublyLinkedList = {1, 2, 3, 4, 5};
+    list<int> LinkedList = {1, 2, 3, 4, 5};
     int searchValue = 3;
     bool found = false;
 
-    for (int val : doublyLinkedList)
+    for (int val : LinkedList)
     {
         if (val == searchValue)
         {

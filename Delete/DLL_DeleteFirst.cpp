@@ -5,13 +5,13 @@ using namespace std;
 
 int main()
 {
-    list<int> doublyLinkedList = {1, 2, 3, 4};
+    list<int> LinkedList = {1, 2, 3, 4};
 
     // Delete the first element
-    doublyLinkedList.pop_front();
+    LinkedList.pop_front();
 
     // Display list
-    for (int val : doublyLinkedList)
+    for (int val : LinkedList)
     {
         cout << val << " ";
     }

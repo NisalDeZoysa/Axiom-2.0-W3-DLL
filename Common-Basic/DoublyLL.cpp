@@ -3,16 +3,16 @@
 
 int main()
 {
-    std::list<int> doublyLinkedList;
+    std::list<int> LinkedList;
 
     // Insert elements
-    doublyLinkedList.push_back(1);
-    doublyLinkedList.push_back(2);
-    doublyLinkedList.push_back(3);
+    LinkedList.push_back(1);
+    LinkedList.push_back(2);
+    LinkedList.push_back(3);
 
     // Traverse and print elements forward
     std::cout << "Forward traversal: ";
-    for (int val : doublyLinkedList)
+    for (int val : LinkedList)
     {
         std::cout << val << " ";
     }
@@ -20,7 +20,7 @@ int main()
 
     // Traverse and print elements backward
     std::cout << "Backward traversal: ";
-    for (auto it = doublyLinkedList.rbegin(); it != doublyLinkedList.rend(); ++it)
+    for (auto it = LinkedList.rbegin(); it != LinkedList.rend(); ++it)
     {
         std::cout << *it << " ";
     }

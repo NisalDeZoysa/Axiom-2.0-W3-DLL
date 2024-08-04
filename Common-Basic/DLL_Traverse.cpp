@@ -5,11 +5,11 @@ using namespace std;
 
 int main()
 {
-    list<int> doublyLinkedList = {1, 2, 3};
+    list<int> LinkedList = {1, 2, 3};
 
     // Forward traversal
     cout << "Forward traversal: ";
-    for (int val : doublyLinkedList)
+    for (int val : LinkedList)
     {
         cout << val << " ";
     }
@@ -17,7 +17,7 @@ int main()
 
     // Backward traversal
     cout << "Backward traversal: ";
-    for (auto it = doublyLinkedList.rbegin(); it != doublyLinkedList.rend(); ++it)
+    for (auto it = LinkedList.rbegin(); it != LinkedList.rend(); ++it)
     {
         cout << *it << " ";
     }
