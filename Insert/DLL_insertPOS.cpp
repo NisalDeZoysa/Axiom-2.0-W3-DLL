@@ -5,15 +5,15 @@ using namespace std;
 
 int main()
 {
-    list<int> doublyLinkedList = {1, 2, 4, 5};
+    list<int> LinkedList = {1, 2, 4, 5};
 
     // Insert at a specific position (3rd position)
-    auto it = doublyLinkedList.begin();
+    auto it = LinkedList.begin();
     advance(it, 2); // Move iterator to the 3rd position
-    doublyLinkedList.insert(it, 3);
+    LinkedList.insert(it, 3);
 
     // Display list
-    for (int val : doublyLinkedList)
+    for (int val : LinkedList)
     {
         cout << val << " ";
     }

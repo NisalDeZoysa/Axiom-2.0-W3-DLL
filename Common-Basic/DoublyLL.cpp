@@ -1,30 +1,41 @@
 #include <iostream>
 #include <list>
 
+using namespace std;
+
 int main()
 {
-    std::list<int> LinkedList;
+    list<int> LinkedList;
 
     // Insert elements
     LinkedList.push_back(1);
     LinkedList.push_back(2);
     LinkedList.push_back(3);
 
-    // Traverse and print elements forward
-    std::cout << "Forward traversal: ";
+    cout << "Forward traversal: ";
     for (int val : LinkedList)
     {
-        std::cout << val << " ";
+        cout << val << " ";
     }
-    std::cout << std::endl;
+    cout << endl;
 
-    // Traverse and print elements backward
-    std::cout << "Backward traversal: ";
+    /*
+    cout << "Backward traversal: ";
     for (auto it = LinkedList.rbegin(); it != LinkedList.rend(); ++it)
     {
-        std::cout << *it << " ";
+        cout << *it << " ";
     }
-    std::cout << std::endl;
+    cout << endl;
+    */
+
+    cout << "Backward traversal: ";
+    list<int> reversedList(LinkedList); // Copying the LL
+    reversedList.reverse();             // Revers that LInekd List.. Not the original One
+    for (int val : reversedList)
+    {
+        cout << val << " ";
+    }
+    cout << endl;
 
     return 0;
 }
